@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Log in to your dashboard" />
+    <meta name="author" content="YOUR NAME" />
+    <meta name="theme-color" content="#363636" />
+    <meta name="robots" content="noindex" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Log in</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <section class="content">
+        <h1 class="content__heading">Log in here</h1>
+        <form action="https://YOUR-WEBHOST.COM/CMD_LOGIN" method="post" class="content__form">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="Your username" class="content__input" required />
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Your password" class="content__input" required />
+          <input type="submit" value="Log in" class="content__btn" />
+
+          <!-- Hidden inputs only for redirects -->
+          <input type="hidden" name="referer" value="/" />
+          <input type="hidden" name="FAIL_URL" value="https://YOUR-LOGIN-PAGE.COM?login=failed" />
+          <input type="hidden" name="LOGOUT_URL" value="https://YOUR-LOGIN-PAGE.COM" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
