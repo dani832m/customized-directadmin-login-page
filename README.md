@@ -8,4 +8,4 @@ If you want a clean login page that actually works. Unlike the demo that DirectA
 1. Replace the value of the action attribute in the form tag with your webhost and port used.
 2. Replace the value of the two input tags named **FAIL_URL** and **LOGOUT_URL**.
 
-That's all!
+**That's all!**
